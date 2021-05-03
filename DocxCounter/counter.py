@@ -12,12 +12,11 @@ characters = len(docText)-docText.count('\n')
 words = len(docText.replace('–','').split())
 
 with open(repoPath+'/README.md','r') as readme:
-    lines = readme.read().splitlines()
+    lines = readme.readlines()
 
-lines[-3] = 'Update: '+str(datetime.date.today())
-lines[-2] = 'Number of words: '+str(words)
-lines[-1] = 'Number of characters: '+str(characters)
-lines = list(line+'  \n' for line in lines)
+lines[-3] = 'Update: '+str(datetime.date.today())+'\n'
+lines[-2] = 'Number of words: '+str(words)+'\n'
+lines[-1] = 'Number of characters: '+str(characters)+'\n'
 
 with open(repoPath+'/README.md','w') as readme:
     readme.writelines(lines)
