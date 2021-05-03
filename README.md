@@ -18,8 +18,9 @@ All above happens every time you run `git commit`.
 ## TODO  
 - [ ] Handling more files  
 - [ ] Handling files outside repo directory  
+- [ ] Doing everything in one commit
 
 ~~~~
-Update: 2021-05-04  
-Number of words: 28813  
-Number of characters: 192731  
+Update: 2021-05-04
+Number of words: 110
+Number of characters: 738
